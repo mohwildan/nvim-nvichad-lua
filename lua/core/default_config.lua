@@ -14,14 +14,14 @@ M.ui = {
 -- Lsp 配置
 M.lsp = {
   servers = {
-    sumneko_lua = true,
+    sumneko_lua = false,
     tailwindcss = true,
     tsserver = true,
     volar = false,
     vuels = true,
     cssls = true,
     jsonls = true,
-    emmet_ls = true,
+    emmet_ls = false,
     html = true,
     eslint = true,
     marksman = true,

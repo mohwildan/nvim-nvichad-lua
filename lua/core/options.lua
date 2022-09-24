@@ -44,10 +44,11 @@ opt.laststatus = 3 -- global statusline
 opt.statusline = "%!v:lua.require('ui.statusline').run()"
 
 -- 不可见的字符显示点
-opt.list = true
+opt.list = false 
 opt.listchars = 'space:⋅'
 
 opt.shortmess:append('c')
+opt.relativenumber = true
 
 vim.cmd('set whichwrap+=<,>,[,],h,l')
 vim.cmd([[set iskeyword+=-]])

@@ -57,7 +57,7 @@ M.init = function()
   map('n', '<leader>w', '<cmd>w!<CR>')
   map('n', '<leader>q', '<cmd>q!<CR>')
   map('n', '<space><cr>', '<cmd>noh<CR>')
-  map('i', 'jk', '<ESC>')
+  map('i', 'jj', '<ESC>')
 
   map('v', '<', '<gv')
   map('v', '>', '>gv')

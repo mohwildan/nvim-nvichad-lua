@@ -4,7 +4,21 @@ if present then
   require('base46').load_highlight('syntax')
   require('base46').load_highlight('treesitter')
   treesitter.setup({
-    ensure_installed = 'all',
+    ensure_installed = {
+      "tsx",
+      "toml",
+      "fish",
+      "php",
+      "json",
+      "yaml",
+      "css",
+      "html",
+      "lua",
+      "typescript",
+      "javascript",
+      "prisma",
+      "graphql"
+    },
     sync_install = false,
     ignore_install = { '' },
     highlight = {

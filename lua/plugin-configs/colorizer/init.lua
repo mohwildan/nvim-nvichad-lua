@@ -1,7 +1,7 @@
 local present, colorizer = pcall(require, 'colorizer')
 
 if present then
-  colorizer.setup({ '*' }, {
+  colorizer.setup({
     RGB = true, -- #RGB hex codes
     RRGGBB = true, -- #RRGGBB hex codes
     names = true, -- "Name" codes like Blue
