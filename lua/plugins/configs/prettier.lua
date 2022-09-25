@@ -1,7 +1,5 @@
-local status, prettier = pcall(require, "prettier")
-if (not status) then return end
 
-prettier.setup {
+return {
   bin = 'prettierd',
   filetypes = {
     "css",
@@ -16,8 +14,4 @@ prettier.setup {
     "python",
     "graphql"
   },
-  cli_options = {
-    semi = true,
-    single_quote = false,
-  }
 }

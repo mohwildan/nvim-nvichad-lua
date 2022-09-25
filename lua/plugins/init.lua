@@ -1,3 +1,4 @@
+vim.cmd [[packadd packer.nvim]]
 local plugins = {
 
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
@@ -111,6 +112,7 @@ local plugins = {
     end,
     config = function()
       require "plugins.configs.lspconfig"
+        require "plugins.configs.lspconfig"
     end,
   },
 
@@ -190,16 +192,25 @@ local plugins = {
       require("core.utils").load_mappings "telescope"
     end,
   },
-
-  ["MunifTanjim/prettier.nvim"] = {},
-
    ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",
-      config = function()
-         require "custom.plugins.null-ls"
-      end,
+    config = function ()
+     require "plugins.configs.null-ls"
+    end
  },
 
+  ["MunifTanjim/prettier.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function ()
+      require "plugins.configs.prettier"
+    end
+  },
+
+  ["iamcco/markdown-preview.nvim"] = {
+    run = function ()
+     vim.fn["mkdp#util#install"]()
+    end
+  },
   -- Only load whichkey after all the gui
   ["folke/which-key.nvim"] = {
     disable = true,

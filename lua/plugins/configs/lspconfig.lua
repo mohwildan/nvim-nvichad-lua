@@ -78,6 +78,34 @@ lspconfig.tsserver.setup {
   filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" }
 }
 
+lspconfig.html.setup {
+  capabilities = M.capabilities,
+  cmd = { "vscode-html-language-server", "--stdio" },
+  filetype = { "html" },
+  init_options = {
+     configurationSection = { "html", "css", "javascript" },
+  embeddedLanguages = {
+    css = true,
+    javascript = true
+  },
+  provideFormatter = true
+  }
+}
+
+lspconfig.cssls.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+  cmd = { "vscode-css-language-server", "--stdio" },
+  filetype = { "css", "scss", "less" }
+}
+
+lspconfig.clangd.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+  cmd = { "clangd" },
+  filetype = { "c", "cpp", "objc", "objcpp", "cuda", "proto" }
+}
+
 lspconfig.tailwindcss.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,
@@ -92,6 +120,14 @@ lspconfig.prismals.setup {
   cmd = { "prisma-language-server", "--stdio" },
   filetype = { "prisma" }
 }
+
+lspconfig.eslint.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+  cmd = { "vscode-eslint-language-server", "--stdio" },
+  filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue", "svelte" }
+}
+
 
 lspconfig.graphql.setup {
   on_attach = M.on_attach,
