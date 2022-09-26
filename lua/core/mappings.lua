@@ -30,7 +30,7 @@ M.general = {
     ["<C-k>"] = { "<C-w>k", "window up" },
 
     -- save
-    ["<C-s>"] = { "<cmd> w <CR>", "save file" },
+    ["<C-s>"] = { "<cmd> :Prettier <CR>", "save file" },
 
     -- Copy all
     ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
@@ -83,14 +83,14 @@ M.tabufline = {
 
   n = {
     -- cycle through buffers
-    ["<TAB>"] = {
+    ["<leader>k"] = {
       function()
         require("nvchad_ui.tabufline").tabuflineNext()
       end,
       "goto next buffer",
     },
 
-    ["<S-Tab>"] = {
+    ["<leader>j"] = {
       function()
         require("nvchad_ui.tabufline").tabuflinePrev()
       end,
@@ -228,7 +228,7 @@ M.lspconfig = {
       "diagnostic setloclist",
     },
 
-    ["<leader>fm"] = {
+    ["pa"] = {
       function()
         vim.lsp.buf.formatting {}
       end,

@@ -78,6 +78,11 @@ lspconfig.tsserver.setup {
   filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" }
 }
 
+lspconfig.pyright.setup {
+  cmd = { "pyright-langserver", "--stdio" },
+  filetype = { "python" },
+}
+
 lspconfig.html.setup {
   capabilities = M.capabilities,
   cmd = { "vscode-html-language-server", "--stdio" },
@@ -109,9 +114,8 @@ lspconfig.clangd.setup {
 lspconfig.tailwindcss.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,
-  cmd = {"tailwindcss-language-server", "--stdio"},
+  cmd = { "tailwindcss-language-server", "--stdio" },
   filetype = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" }
-
 }
 
 lspconfig.prismals.setup {

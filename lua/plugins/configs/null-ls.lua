@@ -8,7 +8,7 @@ local b = null_ls.builtins
 
 local sources = {
 
-   b.formatting.prettier,
+   b.formatting.prettierd,
 
    b.formatting.stylua,
    b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },

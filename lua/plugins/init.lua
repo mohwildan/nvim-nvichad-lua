@@ -151,6 +151,7 @@ local plugins = {
       require("plugins.configs.others").autopairs()
     end,
   },
+   ["windwp/nvim-ts-autotag"] = {},
 
   ["goolord/alpha-nvim"] = {
     after = "base46",

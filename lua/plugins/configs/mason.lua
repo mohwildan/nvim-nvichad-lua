@@ -14,7 +14,7 @@ vim.api.nvim_create_autocmd("Filetype", {
 })
 
 local options = {
-  ensure_installed = { "lua-language-server","typescript-language-server", "tailwindcss-language-server", "prisma-language-server", " graphql-language-service-cli", "html-lsp","css-lsp", "clangd","diagnostic-languageserver","prettier","eslint_d","shellcheck","prettierd","stylua" }, -- not an option from mason.nvim
+  ensure_installed = { "lua-language-server","typescript-language-server", "tailwindcss-language-server", "prisma-language-server", " graphql-language-service-cli", "html-lsp","css-lsp", "clangd","diagnostic-languageserver","prettier","eslint_d","shellcheck","prettierd","stylua","pyright" }, -- not an option from mason.nvim
 
   ui = {
     icons = {

@@ -31,6 +31,9 @@ local options = {
   indent = {
     enable = true,
   },
+  autotag = {
+    enable = true,
+  },
 }
 
 -- check for any override
