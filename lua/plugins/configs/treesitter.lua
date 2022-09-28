@@ -20,7 +20,8 @@ local options = {
     "typescript",
     "javascript",
     "prisma",
-    "graphql"
+    "graphql",
+    "astro"
   },
 
   highlight = {

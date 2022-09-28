@@ -111,6 +111,13 @@ lspconfig.clangd.setup {
   filetype = { "c", "cpp", "objc", "objcpp", "cuda", "proto" }
 }
 
+lspconfig.astro.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+  cmd = { "astro-ls", "--stdio" },
+  filetype = { "astro" }
+}
+
 lspconfig.tailwindcss.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,
