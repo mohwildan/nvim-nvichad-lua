@@ -2,6 +2,9 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
+--format on save
+vim.cmd('autocmd BufWritePost * Prettier')
+
 g.vim_version = vim.version().minor
 g.nvchad_theme = config.ui.theme
 g.toggle_theme_icon = "   "
