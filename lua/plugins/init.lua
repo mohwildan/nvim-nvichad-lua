@@ -212,6 +212,7 @@ local plugins = {
      vim.fn["mkdp#util#install"]()
     end
   },
+
   -- Only load whichkey after all the gui
   ["folke/which-key.nvim"] = {
     disable = true,
