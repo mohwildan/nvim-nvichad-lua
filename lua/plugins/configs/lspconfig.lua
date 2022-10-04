@@ -139,7 +139,11 @@ lspconfig.eslint.setup {
   filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue", "svelte" }
 }
 
-
+lspconfig.jsonls.setup {
+  capabilities  = M.capabilities,
+  cmd = { "vscode-json-language-server", "--stdio" },
+  filetype = { "json", "jsonc" }
+}
 lspconfig.graphql.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,

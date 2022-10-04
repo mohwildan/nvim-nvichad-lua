@@ -194,17 +194,9 @@ local plugins = {
     end,
   },
    ["jose-elias-alvarez/null-ls.nvim"] = {
-      after = "nvim-lspconfig",
-    config = function ()
-     require "plugins.configs.null-ls"
-    end
  },
 
   ["MunifTanjim/prettier.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function ()
-      require "plugins.configs.prettier"
-    end
   },
 
   ["iamcco/markdown-preview.nvim"] = {

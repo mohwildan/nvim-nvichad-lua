@@ -1,5 +1,6 @@
+local prettier = pcall(require, "prettier")
 
-return {
+prettier.setup {
   bin = 'prettierd',
   filetypes = {
     "css",
