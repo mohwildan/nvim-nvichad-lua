@@ -36,10 +36,12 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
 
+
 -- Numbers
 opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
+opt.relativenumber = true
 
 -- disable nvim intro
 opt.shortmess:append "sI"
