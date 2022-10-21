@@ -5,7 +5,7 @@ end, 0)
 require "core"
 require "core.options"
 
--- setup packer + plugins
+-- setup packer + pluginss
 local fn = vim.fn
 local install_path = fn.stdpath "data" .. "/site/pack/packer/opt/packer.nvim"
 
